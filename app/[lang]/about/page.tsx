@@ -2,6 +2,8 @@ import Hero from './_components/Hero';
 import Functional from './_components/Functional';
 import Assistant from './_components/Assistant';
 import Modules from './_components/Modules';
+import Installation from './_components/Installation';
+import Calculator from './_components/Calculator';
 
 export default async function AboutPage({
   params,
@@ -18,6 +20,8 @@ export default async function AboutPage({
       <Functional></Functional>
       <Assistant></Assistant>
       <Modules></Modules>
+      <Installation></Installation>
+      <Calculator></Calculator>
     </div>
   );
 }

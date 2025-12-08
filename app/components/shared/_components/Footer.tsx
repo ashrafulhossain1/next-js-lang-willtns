@@ -3,7 +3,7 @@ export default function Footer() {
   const year = today.getFullYear();
 
   return (
-    <footer className="py-12 bg-gradient-to-r from-[#533589] to-[#30204D] text-white">
+    <footer className="py-12 bg-gradient-to-r from-[#30204D] to-[#533589] text-white">
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-6">
         {/* Left side - Copyright */}
         <div>© {year} YourCompanyName. All rights reserved.</div>
