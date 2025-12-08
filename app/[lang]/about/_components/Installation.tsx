@@ -12,7 +12,7 @@ export default function Installation() {
         </h2>
 
         {/* Card */}
-        <div className="flex gap-5">
+        <div className="flex flex-col md:flex-row gap-5">
           {/* Left Side */}
           <div className="bg-white  flex-1 p-4 md:p-10 h-[423.23px] rounded-[30px]">
             <h2 className="text-xl md:text-2xl font-bold mb-4">

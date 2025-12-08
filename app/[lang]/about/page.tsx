@@ -4,6 +4,8 @@ import Assistant from './_components/Assistant';
 import Modules from './_components/Modules';
 import Installation from './_components/Installation';
 import Calculator from './_components/Calculator';
+import CostSummary from './_components/CostSummary';
+import FAQ from './_components/FAQ';
 
 export default async function AboutPage({
   params,
@@ -22,6 +24,8 @@ export default async function AboutPage({
       <Modules></Modules>
       <Installation></Installation>
       <Calculator></Calculator>
+      <CostSummary></CostSummary>
+      <FAQ></FAQ>
     </div>
   );
 }

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+'use client';
+import { useState } from 'react';
 import { FaPhoneAlt } from 'react-icons/fa'; // Phone icon for the service
 import { FiMinus, FiPlus } from 'react-icons/fi'; // Minus and Plus for the counter
 
 const VoIPCounter = ({ initialPrice = 25 }) => {
   const [count, setCount] = useState(1);
-  const pricePerUser = initialPrice; // CAD/mois
+  const pricePerUser = initialPrice;
 
   const handleIncrement = () => setCount((prevCount) => prevCount + 1);
   const handleDecrement = () =>
@@ -15,15 +16,14 @@ const VoIPCounter = ({ initialPrice = 25 }) => {
     maximumFractionDigits: 0,
   });
 
-  // Data object to simulate passing props, used here for the price string
   const data = {
     price: `${pricePerUser}$ × ${count} = ${totalCost}`,
   };
 
   return (
-    <div className="max-w-md mx-auto p-4 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-2xl">
+    <div className="w-[350px] sm:w-[500px] md:w-[640px] mx-auto p-4 rounded-xl">
       {/* Outer Card with Rounded Corners and Shadow */}
-      <div className="rounded-xl overflow-hidden bg-gradient-to-br from-[#5b3e7f] to-[#3a2958]">
+      <div className="rounded-[20px] overflow-hidden bg-gradient-to-br from-[#5b3e7f] to-[#3a2958]  py-6">
         {/* Header Section: VOIP User Count */}
         <div className="flex items-center justify-between p-5">
           {/* Icon and Title */}
@@ -41,7 +41,7 @@ const VoIPCounter = ({ initialPrice = 25 }) => {
             <button
               onClick={handleDecrement}
               disabled={count === 1}
-              className={`p-1 w-7 h-7 flex items-center justify-center rounded-lg border border-white/30 text-white transition-colors duration-150 ${
+              className={`p-1 w-7 h-7 flex items-center justify-center bg-gray-50/5 rounded-lg border border-white/30 text-white transition-colors duration-150 ${
                 count === 1
                   ? 'opacity-50 cursor-not-allowed'
                   : 'hover:bg-white/10'
@@ -57,24 +57,21 @@ const VoIPCounter = ({ initialPrice = 25 }) => {
 
             <button
               onClick={handleIncrement}
-              className="p-1 w-7 h-7 flex items-center justify-center rounded-lg border border-white/30 text-white hover:bg-white/10 transition-colors duration-150"
+              className="p-1 w-7 h-7 flex items-center justify-center bg-gray-50/5 rounded-lg border border-white/30 text-white hover:bg-white/10 transition-colors duration-150"
               aria-label="Increment user count"
             >
               <FiPlus className="w-4 h-4" />
             </button>
           </div>
         </div>
-
-        {/* --- PRICING BLOCK (Modified to use your design) --- */}
         {/* Your pricing div with the transparent gradient and price text */}
         <div className="w-full">
           <div className="w-full rounded-md bg-gradient-to-r from-[#340a0a04] via-[#ffffff57] to-[#fff0]">
-            <h4 className="text-center sm:text-xs text-lg font-bold py-2 text-white uppercase">
+            <h4 className="text-center sm:text-xs text-lg font-bold py-3 text-white uppercase">
               {data.price} CAD/mois
             </h4>
           </div>
         </div>
-        {/* ----------------------------------------------------- */}
       </div>
     </div>
   );
