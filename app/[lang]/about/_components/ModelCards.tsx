@@ -9,7 +9,7 @@ type Props = {
 export default function ModelCards({ data }: Props) {
   console.log(data.image);
   return (
-    <div className="w-64 group">
+    <div className="w-full">
       {/* Card */}
       <div className="bg-white shadow-lg rounded-xl p-6 group-hover:scale-105 transition-transform duration-300">
         <button className="p-2 h-11 w-11 rounded-full flex justify-center bg-[#FF9500]">
