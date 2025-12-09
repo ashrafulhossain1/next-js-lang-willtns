@@ -7,14 +7,6 @@ import { FaTv } from 'react-icons/fa';
 export default function Hero() {
   return (
     <div className="relative bg-gradient-to-r from-[#30204D] to-[#533589] pt-20 sm:pt-24 lg:pt-32 pb-24 sm:pb-32 lg:pb-40 overflow-hidden">
-      {/* Triangle Shape Background */}
-      <div
-        className="absolute inset-0 bg-gradient-to-r from-[#30204D] to-[#533589]"
-        style={{
-          clipPath: 'polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%)',
-        }}
-      />
-
       {/* Content */}
       <div className="relative z-10 max-w-[1300px] mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 gap-10">
         {/* Left */}
