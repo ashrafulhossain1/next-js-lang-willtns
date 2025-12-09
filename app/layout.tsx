@@ -1,6 +1,7 @@
 import Footer from './components/shared/_components/Footer';
 import Navbar from './components/shared/_components/Navbar';
 import './globals.css';
+import Head from './head';
 
 export default function RootLayout({
   children,
@@ -9,6 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="light">
+      <Head></Head>
       <body>
         <Navbar></Navbar>
         <div className="min-h-[calc(100vh-80px)]">{children}</div>
