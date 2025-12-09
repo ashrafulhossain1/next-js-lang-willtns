@@ -6,7 +6,7 @@ export default function AdminPanel() {
     <div className="py-20 text-black bg-gradient-to-r from-[#30204D] to-[#533589]">
       <div className="max-w-[1300px] mx-auto">
         {/* heading */}
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col p-4 text-center">
           <h3 className="text-white text-3xl font-bold md:text-[45px]">
             Interface web complète pour la gestion
           </h3>
@@ -18,7 +18,7 @@ export default function AdminPanel() {
         {/* two image of admin panel */}
         <div className="flex flex-col md:flex-row gap-4">
           {/* card 1 */}
-          <div className="border w-1/2 p-4 rounded-2xl mt-10 mx-auto bg-white/5 backdrop-blur-md border-white/30">
+          <div className="border w-full md:w-1/2 p-4 rounded-2xl mt-10 mx-auto bg-white/5 backdrop-blur-md border-white/30">
             <div className="border rounded-xl overflow-hidden">
               <Image
                 className="object-cover w-full h-[377px]"
@@ -43,7 +43,7 @@ export default function AdminPanel() {
             </p>
           </div>
           {/* card 2 */}
-          <div className="border w-1/2 p-4 rounded-2xl mt-10 mx-auto bg-white/5 backdrop-blur-md border-white/30">
+          <div className="border w-full md:w-1/2 p-4 rounded-2xl mt-10 mx-auto bg-white/5 backdrop-blur-md border-white/30">
             <div className="border rounded-xl overflow-hidden">
               <Image
                 className="object-cover w-full h-[377px]"

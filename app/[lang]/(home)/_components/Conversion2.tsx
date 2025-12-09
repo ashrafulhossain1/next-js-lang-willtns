@@ -4,69 +4,74 @@ import Image from 'next/image';
 
 const Conversion2 = () => {
   return (
-    <section className="relative w-full bg-white md:pb-20 py-10 text-black">
+    <section className="relative w-full  md:pb-20 py-36 text-black">
       <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 flex flex-col md:flex-row justify-between items-start gap-12">
         {/* LEFT SIDE: PHONE + CHAT + BADGE */}
-        <div className="relative w-full md:w-auto flex justify-center md:justify-start ">
-          <div className="relative">
-            {/* PHONE */}
-            <Image
-              src="/images/apple.png"
-              alt="phone"
-              width={380}
-              height={760}
-              className="w-[260px] sm:w-[320px] md:w-[380px] lg:w-[420px]"
-            />
+        <div className="relative">
+          <div className="w-full md:w-auto flex justify-center md:justify-start ">
+            <div className="relative">
+              {/* PHONE */}
+              <Image
+                src="/images/apple.png"
+                alt="phone"
+                width={380}
+                height={760}
+                className="w-[260px] sm:w-[320px] md:w-[380px] lg:w-[420px]"
+              />
 
-            {/* FIRST CHAT */}
-            <div className="absolute top-[12%] right-[5%] sm:right-[8%] md:right-[10%]">
-              <div className="relative">
-                <div className="bg-[#5FB544] text-white rounded-xl px-4 py-2 text-[11px] sm:text-[13px] w-40 sm:w-[210px] leading-[17px] shadow">
-                  Allô ! Je tiens à ce que j’ai rassemblé tous les documents
-                  qu’il faut pour notre prochaine rencontre.
+              {/* FIRST CHAT */}
+              <div className="absolute top-[12%] right-[5%] sm:right-[8%] md:right-[10%]">
+                <div className="relative">
+                  <div className="bg-[#5FB544] text-white rounded-xl px-4 py-2 text-[11px] sm:text-[13px] w-40 sm:w-[210px] leading-[17px] shadow">
+                    Allô ! Je tiens à ce que j’ai rassemblé tous les documents
+                    qu’il faut pour notre prochaine rencontre.
+                  </div>
+                  <div className="absolute left-5 top-full w-0 h-0 border-l-[6px] border-r-[6px] border-t-8 border-l-transparent border-r-transparent border-t-[#5FB544]" />
                 </div>
-                <div className="absolute left-5 top-full w-0 h-0 border-l-[6px] border-r-[6px] border-t-8 border-l-transparent border-r-transparent border-t-[#5FB544]" />
+                <span className="text-[10px] sm:text-[11px] ml-4 mt-1 block text-green-800 opacity-80">
+                  – Alphonse Clerc
+                </span>
               </div>
-              <span className="text-[10px] sm:text-[11px] ml-4 mt-1 block text-green-800 opacity-80">
-                – Alphonse Clerc
-              </span>
-            </div>
 
-            {/* SECOND CHAT */}
-            <div className="absolute top-[35%] left-[5%] sm:left-[8%] md:left-[10%]">
-              <div className="relative w-40 sm:w-[210px]">
-                <div className="bg-[#26659e] text-white rounded-xl px-4 py-2 text-[11px] sm:text-[13px] leading-[17px] shadow relative">
-                  Bonjour ! J'ai bien reçu le document.
-                </div>
+              {/* SECOND CHAT */}
+              <div className="absolute top-[35%] left-[5%] sm:left-[8%] md:left-[10%]">
+                <div className="relative w-40 sm:w-[210px]">
+                  <div className="bg-[#26659e] text-white rounded-xl px-4 py-2 text-[11px] sm:text-[13px] leading-[17px] shadow relative">
+                    Bonjour ! J'ai bien reçu le document.
+                  </div>
 
-                <div className="flex items-center mt-1">
-                  <div className="absolute left-5 bottom-3.5 w-0 h-0 border-l-[6px] border-r-[6px] border-t-8 border-l-transparent border-r-transparent border-t-[#26659e]" />
-                  <span className="text-[10px] sm:text-[11px] text-[#26659e] opacity-80">
-                    – Alphonse Client
-                  </span>
+                  <div className="flex items-center mt-1">
+                    <div className="absolute left-5 bottom-3.5 w-0 h-0 border-l-[6px] border-r-[6px] border-t-8 border-l-transparent border-r-transparent border-t-[#26659e]" />
+                    <span className="text-[10px] sm:text-[11px] text-[#26659e] opacity-80">
+                      – Alphonse Client
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
           {/* BADGE */}
-          <div
-            className="absolute bottom-0 right-0 bg-white rounded-r-2xl px-10 py-10"
-            style={{ boxShadow: '0 4px 25px rgba(0,0,0,0.15)' }}
-          >
-            <h1 className="font-bold text-[18px] sm:text-[20px] mr-36">
-              Tchat Omnichannel
-            </h1>
+          <div>
+            <div
+              className="hidden left-[400px] bottom-36  w-[300px]  md:w-[450px]  bg-white rounded-r-2xl px-10 py-10"
+              style={{ boxShadow: '0 4px 25px rgba(0,0,0,0.15)' }}
+            >
+              <h1 className="font-bold text-[12px] md:text-[18px] sm:text-[20px">
+                Tchat Omnichannel
+              </h1>
 
-            <li className="flex items-center gap-3">
-              <Image
-                src="/images/check-orange.svg"
-                width={18}
-                height={18}
-                alt=""
-              />
-              Facebook, Messenger avec la page du cabinet.
-            </li>
+              <li className="flex items-center gap-3">
+                <Image
+                  src="/images/check-orange.svg"
+                  width={18}
+                  height={18}
+                  alt=""
+                />
+                <span className="text-xs">
+                  Facebook, Messenger avec la page du cabinet.
+                </span>
+              </li>
+            </div>
           </div>
         </div>
 

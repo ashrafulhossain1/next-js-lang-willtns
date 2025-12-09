@@ -11,13 +11,14 @@ const images: Record<ImageKeys, string> = {
 };
 export default function SignatureRightSide() {
   return (
-    <div className="flex flex-col md:flex-row flex-wrap">
-      <div className="py-5 px-7 w-1/2">
-        <button className="bg-[#FF9500] rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex justify-center items-center text-white text-2xl md:text-3xl lg:text-[45px]">
+    <div className="flex md:w-[824px] flex-col md:flex-row flex-wrap ">
+      {/* right => left */}
+      <div className=" w-full md:w-1/2">
+        <button className="bg-[#FF9500] rounded-full w-12 h-12 sm:w-20 sm:h-20 md:w-20 md:h-20 flex justify-center items-center text-white text-2xl md:text-3xl lg:text-[45px]">
           1
         </button>
         <h2 className="text-xl md:text-2xl font-bold mt-4">
-          <span className=" text-black uppercase">Éditeur PDF</span>
+          <span className=" text-black uppercase">Éditeur PDF</span>{' '}
           <span className="uppercase text-[#FF9500]">intégré</span>
         </h2>
         <p>
@@ -63,13 +64,15 @@ export default function SignatureRightSide() {
           </li>
         </ul>
       </div>
-      <div className="w-1/2 justify-center items-center flex">
-        <Image
-          src={images.img3}
-          alt="Electronic Signature Illustration"
-          width={500}
-          height={500}
-        />
+      <div className="w-full md:w-1/2 flex justify-center items-center">
+        <div className="relative w-full max-w-[500px] aspect-[4/3]">
+          <Image
+            src={images.img3}
+            alt="Electronic Signature Illustration"
+            fill
+            className="object-contain h-full rounded-2xl"
+          />
+        </div>
       </div>
     </div>
   );

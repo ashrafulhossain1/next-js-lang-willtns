@@ -1,88 +1,18 @@
 'use client';
 
 import Image from 'next/image';
+import ConversionCard from './ConversionCard1';
 
 const Conversion1 = () => {
   return (
-    <section className="relative w-full bg-white md:pb-20 py-10 text-black">
+    <section className="relative w-full bg-white md:pb-20 py-10 text-black px-4 md:p-8">
       <div className="relative max-w-[1300px] mx-auto px-4 md:px-0 flex flex-col md:flex-row md:justify-between items-center md:items-start gap-12">
         {/* LEFT CARD */}
-        <div className="w-full md:w-[420px]">
-          <div
-            className="bg-white rounded-2xl p-6 w-full mx-auto relative"
-            style={{ boxShadow: '0 4px 25px rgba(0,0,0,0.15)' }}
-          >
-            <h3 className="text-[18px] font-bold uppercase mb-3">
-              Interface de conversation centralisée
-            </h3>
-            <p className="text-gray-700 text-[14px] leading-[22px] mb-4">
-              Toutes vos conversations client dans une seule interface
-              intuitive.
-            </p>
-
-            <ul className="space-y-3 text-[14px] text-gray-800">
-              <li className="flex items-start gap-3">
-                <Image
-                  src="/images/check-orange.svg"
-                  width={18}
-                  height={18}
-                  alt=""
-                />
-                Historique complet par client
-              </li>
-
-              <li className="flex items-start gap-3">
-                <Image
-                  src="/images/check-orange.svg"
-                  width={18}
-                  height={18}
-                  alt=""
-                />
-                Tous les canaux visibles
-              </li>
-
-              <li className="flex items-start gap-3">
-                <Image
-                  src="/images/check-orange.svg"
-                  width={18}
-                  height={18}
-                  alt=""
-                />
-                Interface mobile et desktop
-              </li>
-            </ul>
-          </div>
-
-          {/* Vertical Line + Icon */}
-          <div className="hidden  md:flex absolute top-[300px] flex-col items-center left-0">
-            <div className="w-2 h-2 bg-gray-300 rounded-full mb-4" />
-            <div className="border-l-[2.5px] border-dashed border-gray-300 h-60" />
-
-            <div className="relative -top-4">
-              <div className="bg-[#FF9500] rounded-full w-[85px] h-[85px] flex items-center justify-center shadow-xl">
-                <Image src="/images/pen.svg" width={45} height={45} alt="pen" />
-              </div>
-            </div>
-
-            <div className="-mt-3 border-2 border-dashed border-gray-300 h-60" />
-            <div className="w-2.5 h-2.5 bg-gray-300 rounded-full" />
-          </div>
-
-          {/* BADGE */}
-          <div
-            className="absolute sm:left-auto -bottom-14  md:bottom-5 right-[400px] bg-white rounded-l-2xl px-10 py-10 border border-green-800"
-            style={{ boxShadow: '0 4px 25px rgba(0,0,0,0.15)' }}
-          >
-            <h1 className="font-bold text-[18px] sm:text-[20px] mr-36">
-              Tchat Omnichannel
-            </h1>
-          </div>
-        </div>
+        <ConversionCard></ConversionCard>
 
         {/* RIGHT PHONE + CHAT */}
         <div className="relative w-full md:w-auto flex justify-center md:justify-end">
           <div className="relative">
-            {/* PHONE */}
             <Image
               src="/images/apple.png"
               alt="phone"
@@ -105,6 +35,15 @@ const Conversion1 = () => {
                 – Alphonse Clerc
               </span>
             </div>
+          </div>
+          {/* BADGE */}
+          <div
+            className="absolute sm:left-auto -bottom-36  md:bottom-5 md:right-[370px] lg:right-[400px] bg-white rounded-l-2xl px-10 py-10"
+            style={{ boxShadow: '0 4px 25px rgba(0,0,0,0.15)' }}
+          >
+            <h1 className="font-bold text-[18px] sm:text-[20px] mr-36">
+              Tchat Omnichannel
+            </h1>
           </div>
         </div>
       </div>

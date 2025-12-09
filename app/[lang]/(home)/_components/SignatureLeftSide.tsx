@@ -2,7 +2,7 @@ import { BsFillFileEarmarkPdfFill } from 'react-icons/bs';
 
 export default function SignatureLeftSide() {
   return (
-    <div className="w-2/5 py-10">
+    <div className="w-full md:w-2/5 py-10 px-4 md:px-8">
       <h1 className="font-bold text-3xl md:text-4xl lg::text-5xl">
         <span className="text-black">Signature électronique </span> <br />
         <span className="text-[#FF9500]">fluide et rapide</span>
