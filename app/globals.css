@@ -121,3 +121,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* tChatCoverCard */
+.backface-hidden {
+  backface-visibility: hidden;
+}

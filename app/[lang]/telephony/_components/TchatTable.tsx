@@ -59,7 +59,7 @@ export default function TchatTable() {
       <Table
         className="min-w-full table-fixed   text-lg rounded-tr-2xl rounded-tl-2xl border"
         style={{
-          boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px;',
+          boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
         }}
       >
         <TableHeader>
