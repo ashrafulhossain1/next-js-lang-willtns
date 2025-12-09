@@ -1,5 +1,4 @@
 import Subtitle from '@/app/components/reuseable/Subtitle';
-import React from 'react';
 
 export default function AIComplianceLeft() {
   return (

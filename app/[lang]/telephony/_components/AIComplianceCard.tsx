@@ -26,10 +26,14 @@ export default function AIComplianceCard() {
 
         <div className="w-full rounded-md bg-gradient-to-r from-[#340a0a04] via-[#ffffff57] to-[#fff0]">
           <h4 className="text-center sm:text-lg md:text-2xl font-bold py-2 text-white uppercase">
-            35 CAD/mois
+            35 CAD/mois <br />
+            kjlsdf
           </h4>
         </div>
-        <p className="text-base mt-2">la lal lala lsdf dfk</p>
+        <p className="text-base mt-2">
+          Détection automatique des renseignements personnels dans les messages
+          et les pièces jointe
+        </p>
       </div>
 
       {/* Right vertical line */}

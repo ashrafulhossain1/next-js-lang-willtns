@@ -1,11 +1,13 @@
 import SectionTitle from '@/app/components/reuseable/SectionTitle';
 import React from 'react';
 import AIComplianceLeft from './AIComplianceLeft';
-import AIComplianceCard from './AIComplianceCard';
+import AIComplianceCards from './AIComplianceCards';
+import { aiComplianceData } from './actions/AIComplianceData';
+import AiComplianceSettings from './AiComplianceSettings';
 
 export default function AIComplianceSection() {
   return (
-    <div className="bg-gradient-to-r from-[#30204D] to-[#533589] py-16 sm:py-20 md:py-24 lg:py-[140px] mt-20">
+    <div className="bg-linear-to-r from-[#30204D] to-[#533589] py-16 sm:py-20 md:py-24 mt-20">
       <div className="max-w-[1300px] mx-auto">
         {/* heding */}
         <div className="flex justify-center items-center text-center">
@@ -19,7 +21,8 @@ export default function AIComplianceSection() {
         </div>
         {/* left side */}
         <AIComplianceLeft></AIComplianceLeft>
-        <AIComplianceCard></AIComplianceCard>
+        <AIComplianceCards data={aiComplianceData}></AIComplianceCards>
+        <AiComplianceSettings></AiComplianceSettings>
       </div>
     </div>
   );
