@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Responsibility() {
   return (
-    <div className="py-8 sm:py-10 md:py-16">
+    <div className="py-8 sm:py-10 md:py-16 bg-[#F6F5F9]">
       <div className="max-w-[1300px] mx-auto px-4">
         {/* Heading */}
         <div className="flex flex-col md:flex-row items-start md:items-center w-full md:w-2/3">

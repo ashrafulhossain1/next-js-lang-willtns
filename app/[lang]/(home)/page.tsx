@@ -5,6 +5,7 @@ import Conversion2 from './_components/Conversion2';
 import ElectronicSignature from './_components/ElectronicSignature';
 import AdminPanel from './_components/AdminPanel';
 import Communication from './_components/Communication';
+import ElectronicSignatureCarousel from './_components/ElectronicSignatureCarousel';
 
 export default async function HomePage({
   params,
