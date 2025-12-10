@@ -4,6 +4,7 @@ import Hero from './_components/Hero';
 import TchatNSign from './_components/TchatNSign';
 import TChatCovered from './_components/TChatCovered';
 import AIComplianceSection from './_components/AIComplianceSection';
+import Responsibility from './_components/Responsibility';
 
 export default function Telephony() {
   const pathname = usePathname();
@@ -14,6 +15,7 @@ export default function Telephony() {
       <TChatCovered></TChatCovered>
       <TchatNSign></TchatNSign>
       <AIComplianceSection></AIComplianceSection>
+      <Responsibility></Responsibility>
     </div>
   );
 }

@@ -126,3 +126,31 @@
 .backface-hidden {
   backface-visibility: hidden;
 }
+
+/* responsibilities of telephonia */
+@keyframes snake-move {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+.animate-snake-border {
+  border: 2px solid transparent; /* thin default border */
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #6d36ec 10%,
+    /* head of snake = thicker/brighter */ #c084fc 25%,
+    transparent 40%,
+    transparent 100%
+  );
+  background-size: 200% 200%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  animation: snake-move 2s linear infinite;
+}
