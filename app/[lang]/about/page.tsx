@@ -6,6 +6,7 @@ import Installation from './_components/Installation';
 import Calculator from './_components/Calculator';
 import CostSummary from './_components/CostSummary';
 import FAQ from './_components/FAQ';
+import CompareSection from './_components/CompareSection';
 
 export default async function AboutPage({
   params,
@@ -18,7 +19,7 @@ export default async function AboutPage({
   return (
     <div className="bg-white">
       <Hero></Hero>
-      {/* <CompareSection></CompareSection>  */}
+      <CompareSection></CompareSection>
       <Functional></Functional>
       <Assistant></Assistant>
       <Modules></Modules>
