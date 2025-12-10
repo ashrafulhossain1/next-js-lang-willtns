@@ -16,7 +16,7 @@ const navLinks: NavLink[] = [
   { label: 'Accueil', href: '/en/about' },
   { label: 'Solutions', href: '/', hasArrow: true },
   { label: 'Omnichannel', href: '/solutions' },
-  { label: 'telephony', href: '/en/telephony' },
+  { label: 'Nelephony', href: '/en/telephony' },
   { label: 'Tarification', href: '/pricing' },
   { label: 'À propos', href: '/' },
   { label: 'Sécurité', href: '/security' },
