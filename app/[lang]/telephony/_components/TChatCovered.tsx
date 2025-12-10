@@ -5,7 +5,7 @@ import { chatCardDatas } from './actions/TChatCardData';
 
 export default function TChatCovered() {
   return (
-    <div className="bg-gradient-to-r from-[#30204D] to-[#533589] py-16 sm:py-20 md:py-24 lg:py-[140px]">
+    <div className="bg-gradient-to-r from-[#30204D] to-[#533589] py-14 sm:py-20  lg:pb-[140px]">
       <div className="max-w-[1300px] mx-auto px-4">
         {/* heading */}
         <div className="text-center">

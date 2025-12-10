@@ -194,7 +194,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-gradient-to-r from-[#30204D] to-[#533589] text-white py-10">
+      <div className="bg-linear-to-r from-[#30204D] to-[#533589] text-white py-10">
         <div className="max-w-[1300px] mx-auto px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div className="text-base md:text-lg font-bold">
             © {year} Tchat N Sign. Tous droits réservés.
